@@ -5,17 +5,17 @@
 # Replace the baseurl with the name of this repository. For example, if the repository is named
 # "my-site-repository", then update the baseurl like so:
 # baseurl: "/my-site-repository"
-baseurl: "/open-sdg-site-starter"
+baseurl: "/sdg-site-madrid"
 # The next line should be the URL of your data repository published site. To find this,
 # go to your data repository in Github, and click "Settings", then scroll down to the
 # "Github Pages" section. Copy/paste the link in the green section.
-remote_data_prefix: "https://open-sdg.org/open-sdg-data-starter"
+remote_data_prefix: "https://madrid2030.github.io/sdg-data-madrid/"
 # In the next few items, replace "open-sdg" with the name of your GitHub
 # organization, and "open-sdg-data-starter" with the name of your data repository.
 # URL for the "Edit Data" button on indicators.
-data_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_[id].csv
+data_edit_url: http://prose.io/#madrid2030/sdg-data-madrid/edit/develop/data/indicator_[id].csv
 # URL for the "Edit Metadata" button on indicators.
-metadata_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/meta/[id].md
+metadata_edit_url: http://prose.io/#madrid2030/sdg-data-madrid/edit/develop/meta/[id].md
 #
 # The list of languages that are translated. The first one is the default.
 languages:
@@ -27,7 +27,7 @@ languages:
 remote_theme: open-sdg/open-sdg@1.2.0
 
 # Replace this title as needed.
-title: Indicators For The Sustainable Development Goals
+title: Indicadores para los objetivos de Desarrollo Sostenible
 url: ""
 environment: staging
 
@@ -66,8 +66,8 @@ email_contacts:
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: Australia
-  adjective: Australian
+  name: Spain
+  adjective: Spain
 
 # Optionally set a title/body for the frontpage banner. The defaults below point to a standard
 # translation, but feel free to change it as needed.
@@ -76,24 +76,12 @@ frontpage_introduction_banner:
   description: frontpage.intro_body
 
 frontpage_goals_grid:
-  title: Our data for Sustainable Development Goal indicators
-  description: Click on each goal for our Sustainable Development Goal global indicator data.
+  title: Indicadores con datos sobre el desarrollo sostenible
+  description: Haga click en un objetivo para ver los datos de Desarrollo Sostenible
 
 frontpage_cards:
   - title: frontpage.download_all
     include: components/download-all-data.html
-  - title: Lorem ipsum
-    content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
-    button_label: Read more
-    button_link: https://example.com
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
-    button_label: Read more
-    button_link: https://example.com
 
 # Pages
 collections:
@@ -116,24 +104,10 @@ menu:
     translation_key: general.goals
   - path: /reporting-status
     translation_key: menu.reporting_status
-  - path: /about
-    translation_key: menu.about
-  - path: /guidance
-    translation_key: menu.guidance
-  - path: /faq
-    translation_key: menu.faq
-  - path: /news
-    translation_key: menu.updates
 
 footer_menu:
-  - path: mailto:my-email-address@example.com
-    translation_key: menu.contact_us
-  - path: https://twitter.com/MyTwitterAccount
-    translation_key: general.twitter
-  - path: https://facebook.com/MyFacebookAccount
-    translation_key: general.facebook
-  - path: /about/cookies-and-privacy/
-    translation_key: menu.cookies
+
+    
 
 # Configure the text (or "translation key") to be used on the
 # non-global metadata tab.
@@ -180,6 +154,9 @@ accessible_charts: true
 # Specify any custom javascript files.
 custom_js:
   - /assets/js/custom.js
+  
+custom_css:
+  - /assets/css/custom.css
 
 # Specify the format of the language toggles. Choices are:
 # "dropdown", "links", or "none"
