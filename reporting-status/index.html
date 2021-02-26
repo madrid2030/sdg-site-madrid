@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
+  remoteDataBaseUrl: 'https://madrid2030.github.io/sdg-data-madrid/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Indicators For The Sustainable Development Goals</title>
+    <title>Indicadores para los objetivos de Desarrollo Sostenible</title>
 
 
 
@@ -105,13 +105,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/open-sdg-site-starter/assets/js/lib/classList.js"></script>
+        <script src="/sdg-site-madrid/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/open-sdg-site-starter/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/sdg-site-madrid/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/sdg-site-madrid/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210226102415">
+        <link rel="stylesheet" href="/sdg-site-madrid/assets/css/style.css?v=20210226102554">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -129,7 +129,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/sdg-site-madrid/assets/css/custom.css?v=20210226102554"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-es layout-reportingstatus">
@@ -153,8 +153,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+      <a class="navbar-brand" href="/sdg-site-madrid/" id="home">
+        <img src="/sdg-site-madrid/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
       </a>
 
       <div class="mobile-widgets">
@@ -169,17 +169,9 @@ var translations = {
             aria-haspopup="true">
           <button data-target="menu-mobile" aria-expanded="false">Menú</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/sdg-site-madrid/goals">Metas</a>
     </li><li class="nav-link active">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/faq">FAQ</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Actualizaciones</a>
+    <a href="/sdg-site-madrid/reporting-status">Estado de informes</a>
     </li></ul>
 
         </li>
@@ -188,7 +180,7 @@ var translations = {
             aria-haspopup="true">
           <button data-target="search-mobile" aria-expanded="false">Buscar</button>
           <div id="search-mobile" class="menu-target">
-  <form action="/open-sdg-site-starter/search">
+  <form action="/sdg-site-madrid/search">
     <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
     <label class="sr-only" for="indicator_search-mobile">Buscar</label>
     <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -199,7 +191,7 @@ var translations = {
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/open-sdg-site-starter/search">
+  <form action="/sdg-site-madrid/search">
     <input type="text" name="q" id="indicator_search" title="Buscar" />
     <label class="sr-only" for="indicator_search">Buscar</label>
     <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -208,17 +200,9 @@ var translations = {
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/sdg-site-madrid/goals">Metas</a>
     </li><li class="nav-link active">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/faq">FAQ</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Actualizaciones</a>
+    <a href="/sdg-site-madrid/reporting-status">Estado de informes</a>
     </li></ul>
 
 
@@ -285,13 +269,13 @@ var translations = {
 </div>
   <h2>Estados por objetivos</h2><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/1">
+        <a href="/sdg-site-madrid/1">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/1.png" alt="Fin de la Pobreza - Meta 1" width="100" height="100" class="goal-icon-1"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/1">Fin de la Pobreza</a>
+            <a href="/sdg-site-madrid/1">Fin de la Pobreza</a>
             <span class="total">14 indicadores</span>
         </h3>
         <div class="summary">
@@ -324,13 +308,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/2">
+        <a href="/sdg-site-madrid/2">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/2.png" alt="Hambre Cero - Meta 2" width="100" height="100" class="goal-icon-2"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/2">Hambre Cero</a>
+            <a href="/sdg-site-madrid/2">Hambre Cero</a>
             <span class="total">13 indicadores</span>
         </h3>
         <div class="summary">
@@ -363,13 +347,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/3">
+        <a href="/sdg-site-madrid/3">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/3.png" alt="Salud y Bienestar - Meta 3" width="100" height="100" class="goal-icon-3"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/3">Salud y Bienestar</a>
+            <a href="/sdg-site-madrid/3">Salud y Bienestar</a>
             <span class="total">27 indicadores</span>
         </h3>
         <div class="summary">
@@ -402,13 +386,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/4">
+        <a href="/sdg-site-madrid/4">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/4.png" alt="Educación de Calidad - Meta 4" width="100" height="100" class="goal-icon-4"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/4">Educación de Calidad</a>
+            <a href="/sdg-site-madrid/4">Educación de Calidad</a>
             <span class="total">11 indicadores</span>
         </h3>
         <div class="summary">
@@ -441,13 +425,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/5">
+        <a href="/sdg-site-madrid/5">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/5.png" alt="Igualdad de Género - Meta 5" width="100" height="100" class="goal-icon-5"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/5">Igualdad de Género</a>
+            <a href="/sdg-site-madrid/5">Igualdad de Género</a>
             <span class="total">14 indicadores</span>
         </h3>
         <div class="summary">
@@ -480,13 +464,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/6">
+        <a href="/sdg-site-madrid/6">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/6.png" alt="Agua Limpia y Saneamiento - Meta 6" width="100" height="100" class="goal-icon-6"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/6">Agua Limpia y Saneamiento</a>
+            <a href="/sdg-site-madrid/6">Agua Limpia y Saneamiento</a>
             <span class="total">11 indicadores</span>
         </h3>
         <div class="summary">
@@ -519,13 +503,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/7">
+        <a href="/sdg-site-madrid/7">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Meta 7" width="100" height="100" class="goal-icon-7"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/7">Energía Asequible y No Contaminante</a>
+            <a href="/sdg-site-madrid/7">Energía Asequible y No Contaminante</a>
             <span class="total">6 indicadores</span>
         </h3>
         <div class="summary">
@@ -558,13 +542,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/8">
+        <a href="/sdg-site-madrid/8">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" alt="Trabajo Decente y Crecimiento Económico - Meta 8" width="100" height="100" class="goal-icon-8"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/8">Trabajo Decente y Crecimiento Económico</a>
+            <a href="/sdg-site-madrid/8">Trabajo Decente y Crecimiento Económico</a>
             <span class="total">17 indicadores</span>
         </h3>
         <div class="summary">
@@ -597,13 +581,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/9">
+        <a href="/sdg-site-madrid/9">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" alt="Industria, Innovación e Infraestructura - Meta 9" width="100" height="100" class="goal-icon-9"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/9">Industria, Innovación e Infraestructura</a>
+            <a href="/sdg-site-madrid/9">Industria, Innovación e Infraestructura</a>
             <span class="total">12 indicadores</span>
         </h3>
         <div class="summary">
@@ -636,13 +620,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/10">
+        <a href="/sdg-site-madrid/10">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/10.png" alt="Reducción de las Desigualdades - Meta 10" width="100" height="100" class="goal-icon-10"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/10">Reducción de las Desigualdades</a>
+            <a href="/sdg-site-madrid/10">Reducción de las Desigualdades</a>
             <span class="total">11 indicadores</span>
         </h3>
         <div class="summary">
@@ -675,13 +659,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/11">
+        <a href="/sdg-site-madrid/11">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/11.png" alt="Cuidades y Comunidades Sostenibles - Meta 11" width="100" height="100" class="goal-icon-11"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/11">Cuidades y Comunidades Sostenibles</a>
+            <a href="/sdg-site-madrid/11">Cuidades y Comunidades Sostenibles</a>
             <span class="total">15 indicadores</span>
         </h3>
         <div class="summary">
@@ -714,13 +698,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/12">
+        <a href="/sdg-site-madrid/12">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/12.png" alt="Producción y Consumo Responsables - Meta 12" width="100" height="100" class="goal-icon-12"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/12">Producción y Consumo Responsables</a>
+            <a href="/sdg-site-madrid/12">Producción y Consumo Responsables</a>
             <span class="total">13 indicadores</span>
         </h3>
         <div class="summary">
@@ -753,13 +737,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/13">
+        <a href="/sdg-site-madrid/13">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/13.png" alt="Acción por el Clima - Meta 13" width="100" height="100" class="goal-icon-13"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/13">Acción por el Clima</a>
+            <a href="/sdg-site-madrid/13">Acción por el Clima</a>
             <span class="total">8 indicadores</span>
         </h3>
         <div class="summary">
@@ -792,13 +776,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/14">
+        <a href="/sdg-site-madrid/14">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/14.png" alt="Vida Submarina - Meta 14" width="100" height="100" class="goal-icon-14"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/14">Vida Submarina</a>
+            <a href="/sdg-site-madrid/14">Vida Submarina</a>
             <span class="total">10 indicadores</span>
         </h3>
         <div class="summary">
@@ -831,13 +815,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/15">
+        <a href="/sdg-site-madrid/15">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/15.png" alt="Vida de Ecosistemas Terrestres - Meta 15" width="100" height="100" class="goal-icon-15"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/15">Vida de Ecosistemas Terrestres</a>
+            <a href="/sdg-site-madrid/15">Vida de Ecosistemas Terrestres</a>
             <span class="total">14 indicadores</span>
         </h3>
         <div class="summary">
@@ -870,13 +854,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/16">
+        <a href="/sdg-site-madrid/16">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" alt="Paz, Justicia e Instituciones Sólidas - Meta 16" width="100" height="100" class="goal-icon-16"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/16">Paz, Justicia e Instituciones Sólidas</a>
+            <a href="/sdg-site-madrid/16">Paz, Justicia e Instituciones Sólidas</a>
             <span class="total">23 indicadores</span>
         </h3>
         <div class="summary">
@@ -909,13 +893,13 @@ var translations = {
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/open-sdg-site-starter/17">
+        <a href="/sdg-site-madrid/17">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/17.png" alt="Alianzas para Lograr los Objetivos - Meta 17" width="100" height="100" class="goal-icon-17"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/17">Alianzas para Lograr los Objetivos</a>
+            <a href="/sdg-site-madrid/17">Alianzas para Lograr los Objetivos</a>
             <span class="total">25 indicadores</span>
         </h3>
         <div class="summary">
@@ -966,27 +950,6 @@ var translations = {
           <ul>
             <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
-              <li>
-                
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
-                
-                </li>
-              <li>
-                
-                  <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
-                
-                </li>
-              <li>
-                
-                  <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                
-                </li>
-              <li>
-                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Galletas</a>
-                
-                </li>
-              
-            
             </ul>
         </div>
       </div>
@@ -1019,12 +982,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210226102415'></script>
+<script src='/sdg-site-madrid/assets/js/sdg.js?v=20210226102554'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210226102415"></script><script>
+    <script src="/sdg-site-madrid/assets/js/custom.js?v=20210226102554"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

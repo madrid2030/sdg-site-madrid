@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
+  remoteDataBaseUrl: 'https://madrid2030.github.io/sdg-data-madrid/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Meta 8 - Trabajo Decente y Crecimiento Económico - Indicators For The Sustainable Development Goals</title>
+    <title>Meta 8 - Trabajo Decente y Crecimiento Económico - Indicadores para los objetivos de Desarrollo Sostenible</title>
 
 
 
@@ -105,13 +105,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/open-sdg-site-starter/assets/js/lib/classList.js"></script>
+        <script src="/sdg-site-madrid/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/open-sdg-site-starter/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/sdg-site-madrid/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/sdg-site-madrid/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210226102415">
+        <link rel="stylesheet" href="/sdg-site-madrid/assets/css/style.css?v=20210226102554">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -129,7 +129,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/sdg-site-madrid/assets/css/custom.css?v=20210226102554"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-es layout-goal-by-target-vertical">
@@ -153,8 +153,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+      <a class="navbar-brand" href="/sdg-site-madrid/" id="home">
+        <img src="/sdg-site-madrid/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
       </a>
 
       <div class="mobile-widgets">
@@ -169,17 +169,9 @@ var translations = {
             aria-haspopup="true">
           <button data-target="menu-mobile" aria-expanded="false">Menú</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/sdg-site-madrid/goals">Metas</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/faq">FAQ</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Actualizaciones</a>
+    <a href="/sdg-site-madrid/reporting-status">Estado de informes</a>
     </li></ul>
 
         </li>
@@ -188,7 +180,7 @@ var translations = {
             aria-haspopup="true">
           <button data-target="search-mobile" aria-expanded="false">Buscar</button>
           <div id="search-mobile" class="menu-target">
-  <form action="/open-sdg-site-starter/search">
+  <form action="/sdg-site-madrid/search">
     <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
     <label class="sr-only" for="indicator_search-mobile">Buscar</label>
     <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -199,7 +191,7 @@ var translations = {
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/open-sdg-site-starter/search">
+  <form action="/sdg-site-madrid/search">
     <input type="text" name="q" id="indicator_search" title="Buscar" />
     <label class="sr-only" for="indicator_search">Buscar</label>
     <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -208,17 +200,9 @@ var translations = {
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/sdg-site-madrid/goals">Metas</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/faq">FAQ</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Actualizaciones</a>
+    <a href="/sdg-site-madrid/reporting-status">Estado de informes</a>
     </li></ul>
 
 
@@ -232,8 +216,8 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/open-sdg-site-starter/">Inicio</a></li>
-  <li><a href="/open-sdg-site-starter/goals">Metas</a></li>
+  <li><a href="/sdg-site-madrid/">Inicio</a></li>
+  <li><a href="/sdg-site-madrid/goals">Metas</a></li>
   
   
 </ol>
@@ -287,7 +271,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-1-1">Tasa de crecimiento anual del PIB real per cápita</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-1-1">Tasa de crecimiento anual del PIB real per cápita</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -318,7 +302,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-2-1">Tasa de crecimiento anual del PIB real por persona empleada</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-2-1">Tasa de crecimiento anual del PIB real por persona empleada</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -349,7 +333,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-3-1">Proporción de empleo informal en el sector no agrícola, desglosada por sexo</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-3-1">Proporción de empleo informal en el sector no agrícola, desglosada por sexo</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -380,7 +364,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-4-1">Huella material en términos absolutos, huella material per cápita y huella material por PIB</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-4-1">Huella material en términos absolutos, huella material per cápita y huella material por PIB</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -402,7 +386,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.4.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-4-2">Consumo material interno en términos absolutos, consumo material interno per cápita y consumo material interno por PIB</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-4-2">Consumo material interno en términos absolutos, consumo material interno per cápita y consumo material interno por PIB</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -433,7 +417,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-5-1">Ingreso medio por hora de empleadas y empleados, desglosado por ocupación, edad y personas con discapacidad</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-5-1">Ingreso medio por hora de empleadas y empleados, desglosado por ocupación, edad y personas con discapacidad</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -455,7 +439,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.5.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-5-2">Tasa de desempleo, desglosada por sexo, edad y personas con discapacidad</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-5-2">Tasa de desempleo, desglosada por sexo, edad y personas con discapacidad</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -486,7 +470,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.6.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-6-1">Proporción de jóvenes (entre 15 y 24 años) que no cursan estudios, no están empleados ni reciben capacitación</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-6-1">Proporción de jóvenes (entre 15 y 24 años) que no cursan estudios, no están empleados ni reciben capacitación</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -517,7 +501,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.7.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-7-1">Proporción y número de niños de entre 5 y 17 años que realizan trabajo infantil, desglosados por sexo y edad</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-7-1">Proporción y número de niños de entre 5 y 17 años que realizan trabajo infantil, desglosados por sexo y edad</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -548,7 +532,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.8.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-8-1">Tasas de frecuencia de las lesiones ocupacionales mortales y no mortales, desglosadas por sexo y estatus migratorio</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-8-1">Tasas de frecuencia de las lesiones ocupacionales mortales y no mortales, desglosadas por sexo y estatus migratorio</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -570,7 +554,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.8.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-8-2">Nivel de cumplimiento nacional de los derechos laborales (libertad de asociación y negociación colectiva) con arreglo a las fuentes textuales de la Organización Internacional del Trabajo (OIT) y la legislación interna, desglosado por sexo y estatus migratorio</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-8-2">Nivel de cumplimiento nacional de los derechos laborales (libertad de asociación y negociación colectiva) con arreglo a las fuentes textuales de la Organización Internacional del Trabajo (OIT) y la legislación interna, desglosado por sexo y estatus migratorio</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -601,7 +585,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.9.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-9-1">PIB generado directamente por el turismo en proporción al PIB total y a la tasa de crecimiento</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-9-1">PIB generado directamente por el turismo en proporción al PIB total y a la tasa de crecimiento</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -623,7 +607,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.9.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-9-2">Proporción de empleos en el sector del turismo sostenible respecto del total de empleos del turismo</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-9-2">Proporción de empleos en el sector del turismo sostenible respecto del total de empleos del turismo</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -654,7 +638,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.10.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-10-1">a) Número de sucursales de bancos comerciales por cada 100.000 adultos y b) número de cajeros automáticos por cada 100.000 adultos</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-10-1">a) Número de sucursales de bancos comerciales por cada 100.000 adultos y b) número de cajeros automáticos por cada 100.000 adultos</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -676,7 +660,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.10.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-10-2">Proporción de adultos (a partir de 15 años de edad) que tienen una cuenta en un banco u otra institución financiera o un proveedor de servicios de dinero móvil</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-10-2">Proporción de adultos (a partir de 15 años de edad) que tienen una cuenta en un banco u otra institución financiera o un proveedor de servicios de dinero móvil</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -707,7 +691,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-a-1">Compromisos y desembolsos en relación con la iniciativa Ayuda para el Comercio</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-a-1">Compromisos y desembolsos en relación con la iniciativa Ayuda para el Comercio</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -738,7 +722,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 8.b.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-b-1">Existencia de una estrategia nacional organizada y en marcha para el empleo de los jóvenes, como estrategia independiente o como parte de una estrategia nacional de empleo</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/8-b-1">Existencia de una estrategia nacional organizada y en marcha para el empleo de los jóvenes, como estrategia independiente o como parte de una estrategia nacional de empleo</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -758,27 +742,6 @@ var translations = {
         <div id="footerLinks">
           <ul>
             <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
-            
-              <li>
-                
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
-                
-                </li>
-              <li>
-                
-                  <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
-                
-                </li>
-              <li>
-                
-                  <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                
-                </li>
-              <li>
-                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Galletas</a>
-                
-                </li>
-              
             
             </ul>
         </div>
@@ -812,12 +775,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210226102415'></script>
+<script src='/sdg-site-madrid/assets/js/sdg.js?v=20210226102554'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210226102415"></script><script>
+    <script src="/sdg-site-madrid/assets/js/custom.js?v=20210226102554"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

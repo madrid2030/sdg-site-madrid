@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
+  remoteDataBaseUrl: 'https://madrid2030.github.io/sdg-data-madrid/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Meta 17 - Alianzas para Lograr los Objetivos - Indicators For The Sustainable Development Goals</title>
+    <title>Meta 17 - Alianzas para Lograr los Objetivos - Indicadores para los objetivos de Desarrollo Sostenible</title>
 
 
 
@@ -105,13 +105,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/open-sdg-site-starter/assets/js/lib/classList.js"></script>
+        <script src="/sdg-site-madrid/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/open-sdg-site-starter/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/sdg-site-madrid/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/sdg-site-madrid/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20210226102415">
+        <link rel="stylesheet" href="/sdg-site-madrid/assets/css/style.css?v=20210226102554">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -129,7 +129,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/sdg-site-madrid/assets/css/custom.css?v=20210226102554"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-es layout-goal-by-target-vertical">
@@ -153,8 +153,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+      <a class="navbar-brand" href="/sdg-site-madrid/" id="home">
+        <img src="/sdg-site-madrid/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
       </a>
 
       <div class="mobile-widgets">
@@ -169,17 +169,9 @@ var translations = {
             aria-haspopup="true">
           <button data-target="menu-mobile" aria-expanded="false">Menú</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/sdg-site-madrid/goals">Metas</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/faq">FAQ</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Actualizaciones</a>
+    <a href="/sdg-site-madrid/reporting-status">Estado de informes</a>
     </li></ul>
 
         </li>
@@ -188,7 +180,7 @@ var translations = {
             aria-haspopup="true">
           <button data-target="search-mobile" aria-expanded="false">Buscar</button>
           <div id="search-mobile" class="menu-target">
-  <form action="/open-sdg-site-starter/search">
+  <form action="/sdg-site-madrid/search">
     <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
     <label class="sr-only" for="indicator_search-mobile">Buscar</label>
     <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -199,7 +191,7 @@ var translations = {
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/open-sdg-site-starter/search">
+  <form action="/sdg-site-madrid/search">
     <input type="text" name="q" id="indicator_search" title="Buscar" />
     <label class="sr-only" for="indicator_search">Buscar</label>
     <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -208,17 +200,9 @@ var translations = {
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/sdg-site-madrid/goals">Metas</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/faq">FAQ</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Actualizaciones</a>
+    <a href="/sdg-site-madrid/reporting-status">Estado de informes</a>
     </li></ul>
 
 
@@ -232,8 +216,8 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/open-sdg-site-starter/">Inicio</a></li>
-  <li><a href="/open-sdg-site-starter/goals">Metas</a></li>
+  <li><a href="/sdg-site-madrid/">Inicio</a></li>
+  <li><a href="/sdg-site-madrid/goals">Metas</a></li>
   
   
 </ol>
@@ -287,7 +271,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-1-1">Total de ingresos del gobierno en proporción al PIB, desglosado por fuente</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-1-1">Total de ingresos del gobierno en proporción al PIB, desglosado por fuente</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -309,7 +293,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.1.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-1-2">Proporción del presupuesto nacional financiado por impuestos internos</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-1-2">Proporción del presupuesto nacional financiado por impuestos internos</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -340,7 +324,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-2-1">Asistencia oficial para el desarrollo neta, total y para los países menos adelantados en proporción al ingreso nacional bruto (INB) de los donantes del Comité de Asistencia para el Desarrollo de la Organización de Cooperación y Desarrollo Económicos (OCDE)</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-2-1">Asistencia oficial para el desarrollo neta, total y para los países menos adelantados en proporción al ingreso nacional bruto (INB) de los donantes del Comité de Asistencia para el Desarrollo de la Organización de Cooperación y Desarrollo Económicos (OCDE)</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -371,7 +355,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-3-1">Inversión extranjera directa, asistencia oficial para el desarrollo y cooperación Sur-Sur en proporción al presupuesto nacional total</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-3-1">Inversión extranjera directa, asistencia oficial para el desarrollo y cooperación Sur-Sur en proporción al presupuesto nacional total</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -393,7 +377,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.3.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-3-2">Volumen de remesas (en dólares de los Estados Unidos) en proporción al PIB total</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-3-2">Volumen de remesas (en dólares de los Estados Unidos) en proporción al PIB total</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -424,7 +408,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-4-1">Servicio de la deuda en proporción a las exportaciones de bienes y servicios</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-4-1">Servicio de la deuda en proporción a las exportaciones de bienes y servicios</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -455,7 +439,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-5-1">Número de países que adoptan y aplican sistemas de promoción de las inversiones en favor de los países menos adelantados</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-5-1">Número de países que adoptan y aplican sistemas de promoción de las inversiones en favor de los países menos adelantados</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -486,7 +470,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.6.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-6-1">Número de acuerdos y programas de cooperación en materia de ciencia o tecnología suscritos por los países, desglosado por tipo de cooperación</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-6-1">Número de acuerdos y programas de cooperación en materia de ciencia o tecnología suscritos por los países, desglosado por tipo de cooperación</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -508,7 +492,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.6.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-6-2">Número de abonados a Internet de banda ancha fija por cada 100 habitantes, desglosado por velocidad</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-6-2">Número de abonados a Internet de banda ancha fija por cada 100 habitantes, desglosado por velocidad</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -539,7 +523,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.7.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-7-1">Total de los fondos aprobados para los países en desarrollo a fin de promover el desarrollo, la transferencia y la difusión de tecnologías ecológicamente racionales</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-7-1">Total de los fondos aprobados para los países en desarrollo a fin de promover el desarrollo, la transferencia y la difusión de tecnologías ecológicamente racionales</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -570,7 +554,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.8.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-8-1">Proporción de personas que utilizan Internet</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-8-1">Proporción de personas que utilizan Internet</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -601,7 +585,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.9.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-9-1">Valor en dólares de la asistencia financiera y técnica (incluso mediante la cooperación Norte-Sur, Sur‐Sur y triangular) prometida a los países en desarrollo</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-9-1">Valor en dólares de la asistencia financiera y técnica (incluso mediante la cooperación Norte-Sur, Sur‐Sur y triangular) prometida a los países en desarrollo</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -632,7 +616,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.10.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-10-1">Promedio arancelario mundial ponderado</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-10-1">Promedio arancelario mundial ponderado</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -663,7 +647,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.11.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-11-1">Participación de los países en desarrollo y los países menos adelantados en las exportaciones mundiales</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-11-1">Participación de los países en desarrollo y los países menos adelantados en las exportaciones mundiales</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -694,7 +678,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.12.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-12-1">Promedio de los aranceles que enfrentan los países en desarrollo, los países menos adelantados y los pequeños Estados insulares en desarrollo</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-12-1">Promedio de los aranceles que enfrentan los países en desarrollo, los países menos adelantados y los pequeños Estados insulares en desarrollo</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -725,7 +709,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.13.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-13-1">Tablero macroeconómico</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-13-1">Tablero macroeconómico</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -756,7 +740,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.14.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-14-1">Número de países que cuentan con mecanismos para mejorar la coherencia de las políticas de desarrollo sostenible</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-14-1">Número de países que cuentan con mecanismos para mejorar la coherencia de las políticas de desarrollo sostenible</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -787,7 +771,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.15.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-15-1">Grado de utilización de los marcos de resultados y las herramientas de planificación de los propios países por los proveedores de cooperación para el desarrollo</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-15-1">Grado de utilización de los marcos de resultados y las herramientas de planificación de los propios países por los proveedores de cooperación para el desarrollo</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -818,7 +802,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.16.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-16-1">Número de países que informan de sus progresos en los marcos de múltiples interesados para el seguimiento de la eficacia de las actividades de desarrollo que apoyan el logro de los Objetivos de Desarrollo Sostenible</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-16-1">Número de países que informan de sus progresos en los marcos de múltiples interesados para el seguimiento de la eficacia de las actividades de desarrollo que apoyan el logro de los Objetivos de Desarrollo Sostenible</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -849,7 +833,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.17.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-17-1">Suma en dólares de los Estados Unidos prometida a las: a) alianzas público-privadas y b) alianzas con la sociedad civil</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-17-1">Suma en dólares de los Estados Unidos prometida a las: a) alianzas público-privadas y b) alianzas con la sociedad civil</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -880,7 +864,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.18.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-18-1">Proporción de indicadores de desarrollo sostenible producidos a nivel nacional, con pleno desglose cuando sea pertinente para la meta, de conformidad con los Principios Fundamentales de las Estadísticas Oficiales</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-18-1">Proporción de indicadores de desarrollo sostenible producidos a nivel nacional, con pleno desglose cuando sea pertinente para la meta, de conformidad con los Principios Fundamentales de las Estadísticas Oficiales</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -902,7 +886,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.18.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-18-2">Número de países cuya legislación nacional sobre estadísticas cumple los Principios Fundamentales de las Estadísticas Oficiales</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-18-2">Número de países cuya legislación nacional sobre estadísticas cumple los Principios Fundamentales de las Estadísticas Oficiales</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -924,7 +908,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.18.3</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-18-3">Número de países que cuentan con un plan estadístico nacional plenamente financiado y en proceso de aplicación, desglosado por fuente de financiación</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-18-3">Número de países que cuentan con un plan estadístico nacional plenamente financiado y en proceso de aplicación, desglosado por fuente de financiación</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -955,7 +939,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.19.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-19-1">Valor en dólares de todos los recursos proporcionados para fortalecer la capacidad estadística de los países en desarrollo</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-19-1">Valor en dólares de todos los recursos proporcionados para fortalecer la capacidad estadística de los países en desarrollo</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -977,7 +961,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicador</span> 17.19.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/17-19-2">Proporción de países que a) han realizado al menos un censo de población y vivienda en los últimos diez años; y b) han registrado el 100% de los nacimientos y el 80% de las defunciones</a></span>
+            <span class="indicator-name"><a href="/sdg-site-madrid/17-19-2">Proporción de países que a) han realizado al menos un censo de población y vivienda en los últimos diez años; y b) han registrado el 100% de los nacimientos y el 80% de las defunciones</a></span>
             <span class="sr-only"></span>
             <span class="status notstarted">
               Explorando fuentes de datos
@@ -997,27 +981,6 @@ var translations = {
         <div id="footerLinks">
           <ul>
             <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
-            
-              <li>
-                
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
-                
-                </li>
-              <li>
-                
-                  <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
-                
-                </li>
-              <li>
-                
-                  <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                
-                </li>
-              <li>
-                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Galletas</a>
-                
-                </li>
-              
             
             </ul>
         </div>
@@ -1051,12 +1014,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20210226102415'></script>
+<script src='/sdg-site-madrid/assets/js/sdg.js?v=20210226102554'></script>
 
 
     
     
-    <script src="/open-sdg-site-starter/assets/js/custom.js?v=20210226102415"></script><script>
+    <script src="/sdg-site-madrid/assets/js/custom.js?v=20210226102554"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
