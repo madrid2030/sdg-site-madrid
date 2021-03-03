@@ -5,7 +5,7 @@ on:
     branches:
       - develop
   schedule:
-    - cron: '10 0 * * *'
+    - cron: '* * * * *'
   repository_dispatch:
     types: rebuild-staging
 
