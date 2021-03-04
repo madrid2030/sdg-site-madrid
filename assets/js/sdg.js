@@ -848,7 +848,7 @@ var accessibilitySwitcher = function() {
   var contrastIdentifiers = ['default', 'high'];
 
   function setActiveContrast(contrast) {
-    var contrastType = ""
+    var contrastType = "none"
     _.each(contrastIdentifiers, function(id) {
       $('body').removeClass('contrast-' + id);
     });
@@ -927,7 +927,7 @@ var accessibilitySwitcher = function() {
   }
 
   function getContrastToggleLabel(identifier){
-    var contrastType = ""
+    var contrastType = "none"
     if(contrastType === "long") {
       if(identifier === "default"){
         return translations.header.default_contrast;
