@@ -96,6 +96,8 @@ collections:
   goals:
     output: true
 
+contrast_type: none
+
 # Menu
 menu:
   # Use these to customise the main navigation.
